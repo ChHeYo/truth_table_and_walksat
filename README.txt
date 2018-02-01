@@ -10,10 +10,9 @@ v = or
 <=> if and only if
 
 
-1. Open a terminal and type ‘python tt_entails.py’. It would open the program.
+1. Open a terminal and type ‘python truth_table_app.py’. It would open the program.
 
 2. It would ask a user to input knowledge base. 
-(MUST PUT SEMI-COLON at the END of knowledge base to tell the program that it’s the end of KB)
 (Each clause MUST BE separated by COMMA)
 
 I solved question #1, #2, #3, so knowledge base for each would be respectively,
