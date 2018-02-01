@@ -4,7 +4,7 @@ import tt_entails as tt
 window = tk.Tk()
 
 window.title("Truth Table App")
-window.geometry("400x600")
+window.geometry("300x600")
 
 def sat_walk():
     if not knowledge_base.get():
@@ -17,13 +17,13 @@ def sat_walk():
 
 
 label = tk.Label(text="- : negation \n^ : and \nv : or \n=> : if ... then \n<=> : if and only if", justify="left")
-label.grid(column=0, row=0)
+label.grid(row=0)
 
 label1 = tk.Label(text="Please enter knowledge base\n(clauses need to be seperated by commas)")
-label1.grid(column=0, row=1)
+label1.grid(row=1)
 
 knowledge_base = tk.Entry(bg="azure")
-knowledge_base.grid(column=0, row=2)
+knowledge_base.grid(row=2)
 
 result_sat = tk.Button(text="A model that satisfies given clauses are: ", command=sat_walk)
 result_sat.grid(column=0, row=3)
